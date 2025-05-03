@@ -1,0 +1,186 @@
+/* reset */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* estilos de header */
+
+.contenedor-video{
+position: relative;
+}
+
+.background-video{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+object-fit: cover;
+z-index: -1;
+filter: blur(1px);
+filter: grayscale(30%);
+height: 100%;
+}
+
+.navegacion{
+z-index: 2;
+background-color: #AAAF6B;
+}
+
+.container-uno{
+padding: 10%;
+z-index: 1;
+color: white;
+}
+
+h5{
+color: #e9de6c;
+}
+
+.texto-uno{
+font-size: 2rem;
+font-weight: 600;
+width: 95%;
+}
+
+.texto-dos{
+font-size: 1rem;
+width: 95%;
+}
+
+.boton-uno{
+padding: 8px;
+width: 150px;
+border-radius: 20px;
+border: none;
+background-color: #999672;
+color: white;
+font-weight: 600;
+}
+
+.boton-uno:hover{
+background-color: white;
+color: #999672;
+font-style: italic;
+}
+
+.menu-uno:hover{
+font-weight: bolder;
+}
+
+.menu-dos:hover{
+font-weight: bolder;
+}
+
+.menu-tres:hover{
+font-weight: bolder;
+}
+
+.menu-cuatro:hover{
+font-weight: bolder;
+}
+
+
+/* estilos de main */
+
+main{
+background-color: #AAAF6B;
+}
+
+img{
+width: 400px;
+height: 400px;
+border-radius: 30px;
+}
+
+.titulo{
+text-align: center;
+}
+
+.contenedor{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 2;
+}
+
+.cards{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-info-p{
+position: relative;
+bottom: 120px;
+left: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+font-weight: 600;
+color: white;
+}
+
+/* estilos de footer */
+
+footer{
+background-color: #999e61;
+color: black;
+height: 70px;
+text-align: center;
+font-weight: bolder;
+}
+
+/* estilos de contacto.html */
+
+.body-contacto{
+background-color: #999672;
+}
+
+section{
+display: flex;
+margin-top: 10%;
+flex-direction: column;
+text-align: center;
+justify-self: center;
+justify-content: center;
+height: 500px;
+width: 500px;
+background-color:  #AAAF6B;
+padding: 3%;
+border-radius: 20px;
+border: solid black;
+margin-bottom: 10%;
+}
+
+/* medias query */
+
+/* celular */
+
+@media screen and (max-width: 390px) { 
+header{
+h5{
+width: 300px;
+}
+.texto-uno{
+font-size: 20px;
+width: 300px;
+}
+
+.texto-dos{
+font-size: 20px;
+width: 200px;
+}
+}
+
+main{
+.titulo{
+padding: 10px;
+}
+.contenedor{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+}
+}
+}
+
