@@ -114,8 +114,9 @@ list-style: none;
 margin-top: 30px;
 }
 
-span{
+.titulo-paginas{
 color: #585e0b;
+font-size: 2.5rem;
 }
 
 /* media querys */
